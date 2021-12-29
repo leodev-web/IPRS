@@ -11,7 +11,8 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-const uri = "mongodb+srv://nodejs-training:AIdX3FVYNnlynCe6@cluster0.zuhej.mongodb.net/iprs?retryWrites=true&w=majority";
+const uri = "mongodb+srv://nodejs-training:<password>@cluster0.zuhej.mongodb.net/iprs?retryWrites=true&w=majority"; 
+//replace password
 
 
 app.listen(port, () => {
@@ -19,9 +20,9 @@ app.listen(port, () => {
 })
 
 mongoose.connect(uri, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  })
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
   .then(() => {
     console.log('MongoDB Connected…');
   })
