@@ -74,7 +74,7 @@ app.delete('/audioLabels/:phoneNo', async (req, res) => {
   }
 })
 
-const uri = "mongodb+srv://nodejs-training:AIdX3FVYNnlynCe6@cluster0.zuhej.mongodb.net/iprs?retryWrites=true&w=majority";
+const uri = "mongodb+srv://nodejs-training:<password>@cluster0.zuhej.mongodb.net/iprs?retryWrites=true&w=majority";
 
 
 app.listen(port, () => {
